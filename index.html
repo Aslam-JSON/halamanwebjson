@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi - Aslam Muzaky</title>
+    <script type="application/ld+json">
+{
+  "profil_pribadi": {
+    "nama": "Aslam Muzaky",
+    "tanggal_lahir": "2004-12-24",
+    "nim": 23050840
+    "alamat": {
+      "jalan": "Perumahan Puri Permai",
+      "kecamatan": "Tigaraksa",
+      "kabupaten": "Tangerang",
+      "provinsi": "Banten",
+      "negara": "Indonesia"
+    },
+    "dosen_pengajar":{
+        "nama_dosen": "Ihsan Maulana",
+        "mata_kuliah": "jaringan_semantik";
+    }
+    "kontak": {
+       "email": "zakyaslam2004@gmail.com",
+      "telepon": "082367264912"
+    },
+    "pendidikan": {
+      "universitas": "Universitas Yatsi Madani",
+      "jurusan": "Ilmu Komputer",
+      "semester": 3
+      "kelas": Tigaraksa B
+    },
+  },
+  "profil_universitas": {
+    "nama_universitas": "Universitas Yatsi Madani",
+    "alamat": {
+      "jalan": "Jalan Pendidikan No. 10",
+      "kota": "Tangerang",
+      "provinsi": "Banten",
+      "negara": "Indonesia"
+    },
+    "fakultas": [
+      {
+        "nama_fakultas": "Fakultas Teknologi Informasi",
+        "departemen": ["Ilmu Komputer", "Sistem Informasi", "Teknologi Informasi"]
+      },
+      {
+        "nama_fakultas": "Fakultas Ekonomi",
+        "departemen": ["Manajemen", "Akuntansi"]
+      }
+    ],
+    "kontak": {
+      "telepon": "021-1234567",
+      "email": "info@yatsimadani.ac.id",
+      "website": "https://www.yatsimadani.ac.id"
+    },
+    "akreditasi": "A"
+  }
+}        
+    </script>  
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-header">
+                <img src="pokemon.png" alt="Foto Profil" class="profile-image">
+                <h1>Aslam Muzaky</h1>
+                <p>Mahasiswa Ilmu Komputer di Universitas Yatsi Madani</p>
+            </div>
+        </header>
+        <section class="bio">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah mahasiswa semester 3 di Universitas Yatsi Madani, jurusan Ilmu Komputer. Saat ini saya sedang mengerjakan tugas akhir yaitu membuat sebuah Halaman Web dengan menggunakan JSON-LD dari dosen saya Yth.Ihsan Maulana. Saya mempunyai Tim sepak bola Favorit yaitu Manchester United, Walaupun seing kalah tapi saya tetap nonton #GGMU</p>
+        </section>
+        <section class="profilsaya">
+            <h2>Informasi Tambahan</h2>
+            <ul>
+                <li>
+                    <a onclick="toggleContent('biodata-list','biodata-icon')">Biodata</a>
+                    <ul id="biodata-list" class="hidden">
+                        <li>Nama : Aslam Muzaky</li>
+                        <li>NIM : 23050840</li>
+                        <li>Semester : 3</li>
+                        <li>Program Studi : Ilmu Komputer</li>
+                        <li>Kelas : Tigaraksa B</li>
+                    </ul>
+                <li>
+                    <a onclick="toggleContent('universitas-list','universitas-icon')">Universitas</a>
+                     <ul id="universitas-list" class="hidden">
+                         <li>Universitas Yatsi Madani</li>
+                         <li>Alamat : Jl. Aria Santika No.40A, RT.001/RW.003, Margasari, Kec. Karawaci, Kota Tangerang, Banten 15114</li>
+                         <li>Jam Operasional : 8.00 pagi - 5.00 sore</li>
+                         <li>Nomor Telepon Universitas : (021) 55726558</li>
+                         <section class="kontak"><li>Untuk Informasi Lebih Lengkap Universitas dengan Mengunjungi Link ini :<a href="https://www.uym.ac.id/">https://www.uym.ac.id/</a></a></li></section>
+                     </ul>
+                 <li>
+                     <a onclick="toggleContent('dosenpengajar-list','dosenpengajar-icon')">Dosen Pengajar</a>
+                     <ul id="dosenpengajar-list" class="hidden">
+                        <li>Yth Ihsan Maulana</li>
+                        <li>Mata Kuliah : Jaringan Semantik</li>
+                    </ul>              
+            </ul>
+        </section>
+        <section class="kontak">
+            <h2>Kontak</h2>
+                 <p>Email <a href="email : zakyaslam2004@gmail.com">zakyaslam2004@gmail.com</a></p>
+                 <p>Instagram <a href="https://www.instagram.com/muzaky7_">https://www.instagram.com/muzaky7_</a></p><br><br><br></br>
+        </section>
+                 </div>
+        <script>
+         function toggleContent(contentId, iconId)
+        {
+             const content = document.getElementById(contentId);
+             const icon = document.getElementById(iconId);
+     
+        if (content.classList.contains('hidden')) {
+             content.classList.remove('hidden');
+             content.classList.add('visible');
+             icon.classList.add('rotate');
+         } else {
+             content.classList.remove('visible');
+             content.classList.add('hidden');
+             icon.classList.remove('rotate');
+             }
+         }
+    </script>
+</body>
+</html>

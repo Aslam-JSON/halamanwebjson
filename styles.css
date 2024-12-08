@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:white;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+header {
+    text-align: center;
+    background-color:gray;
+    color: white;
+    padding: 30px 0;
+    border-radius: 10px;
+}
+
+.profile-header h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.bio, .profilsaya, .contact {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.bio p, .profilsaya ul, .contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.profilsaya ul {
+    list-style: none;
+}
+
+.profilsaya ul li {
+    background-color:gray;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+ul li {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+ul li ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+ul li ul li:last-child {
+    border-bottom: none;
+}
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+    will-change: transform, opacity ;
+}
+
+.visible {
+    max-height: 200px;
+    transition: max-height 0.1s ease-in;
+    will-change: transform, opacity ;
+}
+
+.icon {
+    margin-left: 5px;
+    transition: transform 0.1s ease;
+}
+
+.icon.rotate {
+    transform: rotate(90deg);
+}
+.kontak a {
+    color: green;
+    text-decoration: none;
+}
+
+.kontak a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
